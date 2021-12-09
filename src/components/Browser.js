@@ -13,13 +13,11 @@ class Browser extends Component {
         return (
             <form onSubmit={this.handle}>
                 <div className="row">
-                    <div className="form-group col-md-8">
-                        <input ref= {this.valueRef} type="text" className="form-control form-control-lg" placeholder="Search"/>
+                    <div className="form-group col-md-10">
+                        <input ref= {this.valueRef} type="text" className="form-control form-control-md" placeholder="example: coffe"/>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="form-group col-md-4">
-                        <input type="submit" className="btn btn-lg btn-danger btn-block" value="search..."/>
+                    <div className="form-group col-md-2">
+                        <input type="submit" className="btn btn-md btn-danger btn-block" value="Search"/>
                     </div>
                 </div>
             </form>

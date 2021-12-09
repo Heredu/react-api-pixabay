@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Image from './image';
+import Pagination from './pagination';
 
 class Answer extends Component {
     showImages = () => {
@@ -15,6 +16,12 @@ class Answer extends Component {
                             image={image}
                         />
                     ))}
+                </div>
+                <div className="row justify-content-center">
+                    <Pagination
+                        previousPage={this.props.previousPage}
+                        nextPage={this.props.nextPage}
+                    />
                 </div>
             </React.Fragment>
         )
