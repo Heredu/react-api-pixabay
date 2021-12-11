@@ -17,10 +17,12 @@ class Browser extends Component {
                         <input ref= {this.valueRef} type="text" className="form-control form-control-md" placeholder="example: coffe"/>
                     </div>
                     <div className="form-group col-md-2">
-                        <input type="submit" className="btn btn-md btn-danger btn-block" value="Search"/>
+                        <input type="submit" className="btn btn-md btn-danger btn-block" value="search"/>
+                        <br></br>
+                       
                     </div>
-                </div>
-            </form>
+                </div> 
+            </form> 
         );
     }
 }
